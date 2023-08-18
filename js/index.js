@@ -6,6 +6,7 @@ function burgerAnimation() {
 	const { burgerTlOpen, overlayTl } = burgerTimelines();
 
 	burger.addEventListener('click', () => {
+		console.log('please open');
 		let open = burger.classList.contains('is-open');
 
 		if (open) {
@@ -347,7 +348,7 @@ function customMouse() {
 	gsap.set('.ball', { xPercent: -50, yPercent: -50 });
 
 	window.addEventListener('mousemove', (e) => {
-		console.log('hello world');
+		
 		gsap.to('.ball', {
 			duration: 0.6,
 			ease: 'power3',
@@ -570,6 +571,9 @@ function init() {
 	workWithUs();
 	connectSection();
 	dateCal();
+	toggleAnimation()
+	navigationAnimation()
+	burgerAnimation()
 	
 }
 

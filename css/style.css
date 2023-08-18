@@ -29,7 +29,7 @@
 	font-weight: 400;
 }
 
-.is-loading #main {
+.is-loading #main, .is-loading .nav  {
 	display: none;
 }
 
@@ -125,7 +125,7 @@ body {
 	position: relative;
 	color: var(--text-color);
 	text-transform: capitalize;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	height: 50px;
 }
 
@@ -813,8 +813,8 @@ main {
 		left: 0;
 		right: 0;
 		display: block;
-		background-color: transparent;
-		z-index: 1;
+		/* background-color: transparent; */
+		z-index: 10;
 	}
 	.nav__burger {
 		display: none;
